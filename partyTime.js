@@ -18,17 +18,17 @@ function partyTime(input) {
         }
     }
 let vipList=[];
-let regularList=[]
+let regularList=[];
     for(let i=0; i<finalList.length;i++){
         if (finalList[i][0]>=0 && finalList[i][0]<=9){
-            vipList.push(finalList[i])
+            vipList.push(finalList[i]);
         }else{
-            regularList.push(finalList[i])
+            regularList.push(finalList[i]);
         }
     }
     
 
-    let counter = finalList.length; // Number of guests who did not come
+    let counter = finalList.length;
     console.log(`${counter}`);
     console.log(vipList.join(`\n`));
     console.log(regularList.join(`\n`));
